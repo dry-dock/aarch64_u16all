@@ -1,6 +1,6 @@
 #!/bin/bash -e
 
-declare -a services=( 'cassandra' 'couchdb' 'elasticsearch' 'memcached' 'mongodb' 'mysql' 'neo4j' 'postgres' 'rabbitmq' 'redismq' 'rethinkdb' 'riak' 'selenium')
+declare -a services=( 'couchdb') 
 
 for service in "${services[@]}"
   do
