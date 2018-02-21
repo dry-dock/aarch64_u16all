@@ -2,13 +2,18 @@
 
 sudo chmod 1777 /tmp
 
+# update packages before starting service installs
+apt-get update
+
 for file in /u16all/version/*.sh;
 do
   . "$file"
 done
 
-# TODO: 
-#echo "================= Adding shippable_service ==================="
+echo "================= Adding shippable_service ==================="
+mkdir -p /usr/local/bin/shippable_services
+cp /u16all/services/* /usr/local/bin/shippable_services
+mv /usr/local/bin/shippable_services/shippable_service /usr/local/bin/shippable_service
 
 echo "================= Adding packages for shippable_service =================="
 apt install -y netcat
