@@ -1,13 +1,13 @@
 #!/bin/bash -e
 
-declare -a services=( 'couchdb') 
+declare -a services=( 'couchdb', 'neo4j')
 
 for service in "${services[@]}"
   do
 	echo "Starting $service"
-	./shippable_services $service start
+	shippable_service $service start
 	
 	echo "Stopping $service"
-	./shippable_services $service stop
+	shippable_service $service stop
 done 
 
