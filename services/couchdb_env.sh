@@ -9,7 +9,7 @@ if [ -z "$SHIPPABLE_COUCHDB_BINARY" ]; then
 fi
 
 if [ -z "$SHIPPABLE_COUCHDB_CMD" ]; then
-  export SHIPPABLE_COUCHDB_CMD="service couchdb";
+  export SHIPPABLE_COUCHDB_CMD="/etc/init.d/couchdb";
 fi
 
 if [ -z "$SHIPPABLE_COUCHDB_LOG" ]; then
