@@ -1,8 +1,7 @@
 #!/bin/bash -e
 # Begin service ENV variables
-source "$(dirname "$0")/mongodb_env.sh"
+source "$(dirname "$0")/redis_env.sh"
 # End service ENV variables
-
 start_generic_service() {
   name=$1
   binary=$2
@@ -34,16 +33,19 @@ start_generic_service() {
   else
     echo "$name will not be started because the binary was not found at $binary."
     exit 99
- fi
+  fi
 }
-if [ "$1" == "start" ]; then
-  echo "================= Starting mongo ==================="
+if [ "$1" = "start" ]
+then
+  echo "================= Starting redis ==================="
   printf "\n"
-  start_generic_service "mongodb" "$SHIPPABLE_MONGODB_BINARY" "$SHIPPABLE_MONGODB_CMD" "$SHIPPABLE_MONGODB_PORT";
-elif [ "$1" == "stop" ]; then
-  echo "================= Stopping mongo ==================="
+  start_generic_service "redis" "$SHIPPABLE_REDIS_BINARY" "$SHIPPABLE_REDIS_CMD" "$SHIPPABLE_REDIS_PORT";
+elif [ "$1" = "stop" ]
+then
+  echo "================= Stopping redis ==================="
   printf "\n"
-  sudo su -c "/usr/bin/mongod -f /etc/mongod.conf --shutdown";
-  sudo su -c "rm -rf /var/lib/mongodb/*";
+  su -c "redis-cli shutdown";
+else
+  echo "No action executed"
 fi
 
