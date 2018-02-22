@@ -11,3 +11,7 @@ curl --fail --show-error -o ${NEO4J_TARBALL} ${NEO4J_URI} \
     && mv /var/lib/neo4j-* /var/lib/neo4j \
     && rm ${NEO4J_TARBALL}
 
+
+echo "========================= adding neo4j conf properties ==========="
+mkdir -p /var/lib/neo4j/conf
+cd /u16all && cp -rf neo4j-server.properties /var/lib/neo4j/conf/
