@@ -1,4 +1,4 @@
-# u16all
+# aarch64_u16all
 Ubuntu 16.04 aarch64 image with all services
 
 Services installed on the image
