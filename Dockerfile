@@ -1,4 +1,4 @@
-FROM drydockaarch64/u16:master
+FROM drydock/aarch64_u16:master
 
 ADD . /u16all
 
