@@ -1,7 +1,7 @@
 
 #!/bin/bash -e
 
-POSTGRES_VERSION=9.5
+POSTGRES_VERSION=10.3
 echo "================= Installing Postgres $POSTGRES_VERSION ==================="
 apt-get install -y postgresql-"$POSTGRES_VERSION" postgresql-server-dev-"$POSTGRES_VERSION" postgis
 
