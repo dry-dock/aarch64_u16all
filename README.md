@@ -5,12 +5,12 @@ Services installed on the image
 - couchdb 1.6.0
 - elasticsearch 6.2.4
 - memcached 1.4.25
-- mongo 4.0.0
+- mongo 4.0.1
 - neo4j 3.3.6
 - postgres 9.5
 - rabbitmq 3.6.15
-- redis 4.0.10 (chris-lea ppa)
-- selenium 3.13.0
+- redis 4.0.11 (chris-lea ppa)
+- selenium 3.14.0
 - sqlite 3.11.0
 
 
