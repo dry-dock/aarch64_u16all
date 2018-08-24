@@ -3,8 +3,8 @@ Ubuntu 16.04 aarch64 image with all services
 
 Services installed on the image
 - couchdb 1.6.0
-- elasticsearch 6.3.2
-- memcached 1.5.9
+- elasticsearch 6.2.4
+- memcached 1.4.25
 - mongo 4.0.1
 - neo4j 3.3.6
 - postgres 9.5
