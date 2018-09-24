@@ -15,6 +15,7 @@ wget http://memcached.org/files/memcached-$MEM_VERSION.tar.gz
 tar xzf memcached-$MEM_VERSION.tar.gz && cd memcached-$MEM_VERSION
 ./configure
 make && make install
+cp /usr/local/bin/memcached /usr/bin
 cd .. && rm -rf memcached-$MEM_VERSION && rm -f memcached-$MEM_VERSION.tar.gz
 
 
