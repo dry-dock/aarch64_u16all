@@ -21,3 +21,5 @@ Services **not** supported on this image
 - cassandra
 - rethinkdb
 - riak
+
+ubuntu 16.04 for ARM 64 architecture Docker Hub repo: [drydock/aarch64_u16all](https://hub.docker.com/r/drydock/aarch64_u16all/)
