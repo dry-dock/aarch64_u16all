@@ -26,8 +26,8 @@ apt-get install -y \
 echo "================== Installing firefox and xvfb  =================="
 apt-get install -y xvfb firefox unzip
 
-VERSION=3.14.0
+VERSION=3.141.5
 echo "================= Installing Selenium $VERISON  ==================="
 mkdir -p /usr/local/selenium >/dev/null 2>&1
-wget http://selenium-release.storage.googleapis.com/3.14/selenium-server-standalone-"$VERSION".jar -P /usr/local/selenium
+wget http://selenium-release.storage.googleapis.com/3.141/selenium-server-standalone-"$VERSION".jar -P /usr/local/selenium
 
