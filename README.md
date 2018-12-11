@@ -9,7 +9,7 @@ Services installed on the image
 - neo4j 3.3.9
 - postgres 9.5
 - rabbitmq 3.6.15
-- redis 5.0.0 (chris-lea ppa)
+- redis 5.0.2 (chris-lea ppa)
 - selenium 3.141.5
 - sqlite 3.11.0
 
