@@ -5,8 +5,8 @@ Services installed on the image
 - couchdb 1.6.0
 - elasticsearch 6.2.4
 - memcached 1.5.12
-- mongo 4.0.5
-- neo4j 3.3.9
+- mongo 4.0.6
+- neo4j 3.5.3
 - postgres 9.5
 - rabbitmq 3.6.15
 - redis 5.0.3 (chris-lea ppa)
